@@ -1,0 +1,209 @@
+.container {
+  width: 90%;
+  height: 70%;
+  border: 2px solid #000;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.modal-box {
+  position: absolute;
+  display: none;
+  width: 600px;
+  height: auto;
+  border: 1px solid #333;
+  border-radius: 4px;
+  margin: 0 auto;
+  top: 40px;
+  font-size: 28px;
+  background-color: #fff;
+  z-index: 99;
+}
+.modal-box .timer-box {
+  margin-top: 30px;
+  width: 100%;
+  border-top: 2px solid silver;
+  border-bottom: 2px solid silver;
+  line-height: 80px;
+  margin: 20px auto;
+  text-align: center;
+}
+.modal-box .button-box {
+  margin: 10px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.modal-box .button-box button {
+  background-color: rgb(210, 60, 60);
+  border: 1px solid red;
+  font-size: 16px;
+  width: 80px;
+  height: 40px;
+  border-radius: 6px;
+  margin: 10px;
+  color: #fff;
+}
+.modal-box .button-box #check-add {
+  background-color: rgb(29, 128, 28);
+  border: 1px solid rgb(12, 104, 9);
+}
+
+.box-timer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-timer span {
+  font-size: 72px;
+}
+
+.box-button {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-button button {
+  background-color: rgb(210, 60, 60);
+  border: 1px solid red;
+  font-size: 18px;
+  width: 150px;
+  height: 40px;
+  border-radius: 6px;
+  margin: 10px;
+  color: #fff;
+}
+
+#start:disabled {
+  background-color: rgb(201, 120, 120);
+}
+
+#start:enabled {
+  background-color: rgb(210, 60, 60);
+}
+
+#check:disabled {
+  background-color: rgb(201, 120, 120);
+}
+
+#check:enabled {
+  background-color: rgb(210, 60, 60);
+}
+
+.src-box {
+  width: 400px;
+  height: 400px;
+  background-image: url("images/AK_Logo.png");
+  border: 1px solid #000;
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 0 10px 0 #333;
+}
+
+.result-box {
+  width: 400px;
+  height: 400px;
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 0 10px 0 #333;
+}
+
+.puzzle-box {
+  width: 400px;
+  height: 400px;
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  box-shadow: 0 0 10px 0 #333;
+}
+.puzzle-box .box {
+  width: 25%;
+  height: 25%;
+  position: relative;
+  background-image: url("images/AK_Logo.png");
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-clip: border-box;
+  z-index: 2;
+  color: transparent;
+}
+.puzzle-box .box-dest {
+  width: 25%;
+  height: 25%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-clip: border-box;
+  z-index: 2;
+}
+.puzzle-box .box-dest div {
+  width: 100%;
+  height: 100%;
+}
+
+#dest {
+  width: 400px;
+  height: 400px;
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  box-shadow: 0 0 10px 0 #333;
+}
+#dest .box-dest {
+  width: 25%;
+  height: 25%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-clip: border-box;
+  z-index: 2;
+}
+#dest .box-dest div {
+  width: 100%;
+  height: 100%;
+}
+
+.hover {
+  background-color: rgb(169, 187, 151);
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
